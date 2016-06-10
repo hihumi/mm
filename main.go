@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "./mylib"
+	_ "mm"
 	"fmt"
 	_ "os"
 )
