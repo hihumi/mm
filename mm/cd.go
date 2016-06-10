@@ -2,7 +2,6 @@ package mylib
 
 import (
 	"fmt"
-	_ "os"
 )
 
 type CdStruct struct {
