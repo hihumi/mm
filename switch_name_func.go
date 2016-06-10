@@ -9,15 +9,15 @@ import (
 func SwitchNameFunc(x string) {
 
 	var (
-		cd  = mylib.CdStringFunc()
-		pwd = mylib.PwdStringFunc()
+		cd  = mm.CdStringFunc()
+		pwd = mm.PwdStringFunc()
 	)
 
 	switch true {
 	case x == cd:
-		mylib.CdPrintFunc()
+		mm.CdPrintFunc()
 	case x == pwd:
-		mylib.PwdPrintFunc()
+		mm.PwdPrintFunc()
 	default:
 		fmt.Println("見つかりませんでした")
 	}
