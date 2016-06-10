@@ -1,15 +1,15 @@
 package main
 
 import (
-	"mm"
 	"fmt"
+	"mm"
 	_ "os"
 )
 
 func SwitchNameFunc(x string) {
 
 	var (
-		cd = mylib.CdStringFunc()
+		cd  = mylib.CdStringFunc()
 		pwd = mylib.PwdStringFunc()
 	)
 
