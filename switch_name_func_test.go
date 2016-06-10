@@ -1,5 +1,5 @@
 import (
-	"./mylib"
+	"mm"
 	"testing"
 )
 
