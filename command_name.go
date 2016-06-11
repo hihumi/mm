@@ -5,14 +5,14 @@ import (
 	"fmt"
 )
 
-func CommandNameFunc(commandName string) {
+func SwitchCommandNameFunc(commandName string) {
 
 	var (
 		cd  = mm.CdStringFunc()
 		pwd = mm.PwdStringFunc()
 	)
 
-	switch true {
+	switch {
 	case commandName == cd:
 		mm.CdPrintFunc()
 	case commandName == pwd:
