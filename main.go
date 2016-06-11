@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	_ "mm"
-	_ "os"
+	_ "./mm"
 )
 
 func main() {

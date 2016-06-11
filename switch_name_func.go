@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"mm"
+	"./mm"
 	_ "os"
 )
 

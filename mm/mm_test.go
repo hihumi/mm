@@ -1,4 +1,4 @@
-package mylib
+package mm
 
 import (
 	"testing"
