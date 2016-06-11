@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./mm"
+	"github.com/hihumi/mm/mm"
 	"testing"
 )
 
