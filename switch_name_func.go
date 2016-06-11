@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func SwitchNameFunc(x string) {
+func SwitchNameFunc(commandName string) {
 
 	var (
 		cd  = mm.CdStringFunc()
@@ -13,9 +13,9 @@ func SwitchNameFunc(x string) {
 	)
 
 	switch true {
-	case x == cd:
+	case commandName == cd:
 		mm.CdPrintFunc()
-	case x == pwd:
+	case commandName == pwd:
 		mm.PwdPrintFunc()
 	default:
 		fmt.Println("見つかりませんでした")

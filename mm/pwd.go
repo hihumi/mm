@@ -4,17 +4,24 @@ import (
 	"fmt"
 )
 
-func PwdStringFunc() string {
-	pwdString := "pwd"
+type PwdStruct struct {
+	pwdString interface{}
+	pwd       interface{}
+}
 
-	return pwdString
+func PwdStringFunc() interface{} {
+	var Pwd PwdStruct
+	Pwd.pwdString = "pwd"
+
+	return Pwd.pwdString
 
 }
 
 func PwdPrintFunc() {
-	pwd := PwdStringFunc()
+	var Pwd PwdStruct
+	Pwd.pwd = PwdStringFunc()
 
-	fmt.Printf("%s: 現在のディレクトリを表示します\n詳細: オンラインマニュアル: $ man %s\n", pwd, pwd)
+	fmt.Printf("%v: 現在のディレクトリを表示します\n詳細: オンラインマニュアル: $ man %v\n", Pwd.pwd, Pwd.pwd)
 
 	return
 }
