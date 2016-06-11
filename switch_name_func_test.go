@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestSwitchNameFuncn(t *testing.T) {
+func TestSwitchNameFunc(t *testing.T) {
 	expectCd := "cd"
 	actualCd := mm.CdStringFunc()
 
