@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"./mm"
-	_ "os"
 )
 
 func SwitchNameFunc(x string) {
