@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func SwitchNameFunc(commandName string) {
+func CommandNameFunc(commandName string) {
 
 	var (
 		cd  = mm.CdStringFunc()

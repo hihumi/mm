@@ -19,6 +19,6 @@ func main() {
 			break
 		}
 
-		SwitchNameFunc(commandName)
+		CommandNameFunc(commandName)
 	}
 }
