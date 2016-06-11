@@ -1,7 +1,6 @@
 package main
 
 import (
-	_ "./mm"
 	"fmt"
 )
 
@@ -10,16 +9,16 @@ func main() {
 
 	for {
 		fmt.Printf(">>> ")
-		var name string
-		fmt.Scanln(&name)
+		var commandName string
+		fmt.Scanln(&commandName)
 
 		q := "q"
 		Q := "Q"
-		if q == name || Q == name {
+		if q == commandName || Q == commandName {
 			fmt.Println("終了")
 			break
 		}
 
-		SwitchNameFunc(name)
+		SwitchNameFunc(commandName)
 	}
 }
