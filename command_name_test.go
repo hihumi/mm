@@ -7,16 +7,16 @@ import (
 
 func TestSwitchNameFunc(t *testing.T) {
 	expectCd := "cd"
-	actualCd := mm.CdStringFunc()
+	actualCd := mm.CdReturnString()
 
 	if expectCd != actualCd {
-		t.Errorf("%s != %s\n", expectCd, actualCd)
+		t.Errorf("%v != %v\n", expectCd, actualCd)
 	}
 
 	expectPwd := "pwd"
-	actualPwd := mm.PwdStringFunc()
+	actualPwd := mm.PwdReturnString()
 
 	if expectPwd != actualPwd {
-		t.Errorf("%s != %s\n", expectPwd, actualPwd)
+		t.Errorf("%v != %v\n", expectPwd, actualPwd)
 	}
 }

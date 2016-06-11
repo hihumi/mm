@@ -4,20 +4,20 @@ import (
 	"testing"
 )
 
-func TestCdStringFunc(t *testing.T) {
+func TestCdReturnString(t *testing.T) {
 	expect := "cd"
-	actual := CdStringFunc()
+	actual := CdReturnString()
 
 	if expect != actual {
-		t.Errorf("%s != %s\n", expect, actual)
+		t.Errorf("%v != %v\n", expect, actual)
 	}
 }
 
-func TestPwdStringFunc(t *testing.T) {
+func TestPwdString(t *testing.T) {
 	expect := "pwd"
-	actual := PwdStringFunc()
+	actual := PwdReturnString()
 
 	if expect != actual {
-		t.Errorf("%s != %s\n", expect, actual)
+		t.Errorf("%v != %v\n", expect, actual)
 	}
 }

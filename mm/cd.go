@@ -9,16 +9,16 @@ type CdStruct struct {
 	cd       interface{}
 }
 
-func CdStringFunc() interface{} {
+func CdReturnString() interface{} {
 	var Cd CdStruct
 	Cd.cdString = "cd"
 
 	return Cd.cdString
 }
 
-func CdPrintFunc() {
+func CdPrint() {
 	var Cd CdStruct
-	Cd.cd = CdStringFunc()
+	Cd.cd = CdReturnString()
 
 	fmt.Printf("%v: カレントディレクトリを変更します\n詳細: オンラインマニュアル: $ man %v\n", Cd.cd, Cd.cd)
 

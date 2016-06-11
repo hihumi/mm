@@ -9,7 +9,7 @@ type PwdStruct struct {
 	pwd       interface{}
 }
 
-func PwdStringFunc() interface{} {
+func PwdReturnString() interface{} {
 	var Pwd PwdStruct
 	Pwd.pwdString = "pwd"
 
@@ -17,9 +17,9 @@ func PwdStringFunc() interface{} {
 
 }
 
-func PwdPrintFunc() {
+func PwdPrint() {
 	var Pwd PwdStruct
-	Pwd.pwd = PwdStringFunc()
+	Pwd.pwd = PwdReturnString()
 
 	fmt.Printf("%v: 現在のディレクトリを表示します\n詳細: オンラインマニュアル: $ man %v\n", Pwd.pwd, Pwd.pwd)
 

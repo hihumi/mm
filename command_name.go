@@ -8,15 +8,15 @@ import (
 func SwitchCommandNameFunc(commandName string) {
 
 	var (
-		cd  = mm.CdStringFunc()
-		pwd = mm.PwdStringFunc()
+		cd  = mm.CdReturnString()
+		pwd = mm.PwdReturnString()
 	)
 
 	switch {
 	case commandName == cd:
-		mm.CdPrintFunc()
+		mm.CdPrint()
 	case commandName == pwd:
-		mm.PwdPrintFunc()
+		mm.PwdPrint()
 	default:
 		fmt.Println("見つかりませんでした")
 	}
