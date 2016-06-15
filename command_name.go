@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/hihumi/mm/mm"
 	"fmt"
+	"github.com/hihumi/mm/mm"
 )
 
 func SwitchCommandName(commandName string) {
@@ -12,10 +12,10 @@ func SwitchCommandName(commandName string) {
 		pwd = mm.PwdReturnString()
 	)
 
-	switch {
-	case commandName == cd:
+	switch commandName {
+	case cd:
 		mm.CdPrint()
-	case commandName == pwd:
+	case pwd:
 		mm.PwdPrint()
 	default:
 		fmt.Println("見つかりませんでした")
