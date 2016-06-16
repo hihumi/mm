@@ -13,7 +13,7 @@ func TestCdReturnString(t *testing.T) {
 	}
 }
 
-func TestPwdString(t *testing.T) {
+func TestPwdReturnString(t *testing.T) {
 	expect := "pwd"
 	actual := PwdReturnString()
 
