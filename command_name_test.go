@@ -6,17 +6,19 @@ import (
 )
 
 func TestSwitchCommandName(t *testing.T) {
-	expectCd := "cd"
-	actualCd := mm.CdReturnString()
+	// mm.CdReturnString() (cd.go: CdReturnString())
+	CdExpect := "cd"
+	CdActual := mm.CdReturnString()
 
-	if expectCd != actualCd {
-		t.Errorf("%v != %v\n", expectCd, actualCd)
+	if CdExpect != CdActual {
+		t.Errorf("%v != %v\n", CdExpect, CdActual)
 	}
 
-	expectPwd := "pwd"
-	actualPwd := mm.PwdReturnString()
+	// mm.PwdReturnString() (pwd.go: PwdReturnString())
+	PwdExpect := "pwd"
+	PwdActual := mm.PwdReturnString()
 
-	if expectPwd != actualPwd {
-		t.Errorf("%v != %v\n", expectPwd, actualPwd)
+	if PwdExpect != PwdActual {
+		t.Errorf("%v != %v\n", PwdExpect, PwdActual)
 	}
 }
